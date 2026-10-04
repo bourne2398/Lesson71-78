@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nihongo Lessons 71–78 | N2-3 Final Examination</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Noto+Sans:wght@400;600;700&display=swap" rel="stylesheet">
@@ -61,15 +63,28 @@
       100% { transform: rotate(360deg); }
     }
 
+    .logo-wrap {
+      position: relative;
+      margin-bottom: 1rem;
+      display: flex;
+      justify-content: center;
+    }
+
+    .logo {
+      height: 56px;
+      width: auto;
+      filter: drop-shadow(0 2px 8px rgba(0,0,0,0.15));
+    }
+
     header h1 {
-      font-size: 2.4rem;
+      font-size: 2.2rem;
       font-weight: 700;
-      margin-bottom: 0.5rem;
+      margin-bottom: 0.4rem;
       position: relative;
     }
 
     header p {
-      font-size: 1.15rem;
+      font-size: 1.1rem;
       opacity: 0.95;
       position: relative;
     }
@@ -316,10 +331,13 @@
     /* Responsive - wide content for phone (Camon 30 5G etc.) */
     @media (max-width: 640px) {
       header {
-        padding: 1.8rem 1rem 2.2rem;
+        padding: 1.6rem 1rem 2rem;
       }
-      header h1 { font-size: 1.7rem; }
-      header p { font-size: 1rem; }
+      .logo {
+        height: 48px;
+      }
+      header h1 { font-size: 1.6rem; }
+      header p { font-size: 0.95rem; }
 
       main {
         padding: 0.75rem 0.4rem 3.5rem;
@@ -401,6 +419,9 @@
 </head>
 <body>
   <header>
+    <div class="logo-wrap">
+      <img src="logo.svg" alt="Nihongo Logo" class="logo" width="180" height="60">
+    </div>
     <h1>にほんご レッスン 71〜78</h1>
     <p>N2-3 Final Examination Review • Simple Tagalog Explanations</p>
   </header>
