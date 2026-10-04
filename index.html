@@ -103,11 +103,11 @@
       color: white;
     }
 
-    /* Main content */
+    /* Main content - full width for phone review */
     main {
-      max-width: 920px;
+      max-width: 100%;
       margin: 0 auto;
-      padding: 2rem 1.25rem 5rem;
+      padding: 1rem 0.5rem 4rem;
     }
 
     .lesson {
@@ -313,12 +313,86 @@
       margin-top: 2rem;
     }
 
-    /* Responsive */
+    /* Responsive - wide content for phone (Camon 30 5G etc.) */
     @media (max-width: 640px) {
-      header h1 { font-size: 1.8rem; }
-      .lesson-header { padding: 1.1rem; }
-      .lesson-body { padding: 1.2rem; }
-      .jp { font-size: 1.05rem; }
+      header {
+        padding: 1.8rem 1rem 2.2rem;
+      }
+      header h1 { font-size: 1.7rem; }
+      header p { font-size: 1rem; }
+
+      main {
+        padding: 0.75rem 0.4rem 3.5rem;
+      }
+
+      .lesson {
+        margin-bottom: 1.5rem;
+        border-radius: 12px;
+      }
+
+      .lesson-header {
+        padding: 1rem 0.9rem;
+        gap: 0.7rem;
+      }
+
+      .lesson-number {
+        width: 42px;
+        height: 42px;
+        font-size: 1.2rem;
+        border-radius: 10px;
+      }
+
+      .lesson-title {
+        font-size: 1.2rem;
+      }
+
+      .lesson-body {
+        padding: 1rem 0.75rem;
+      }
+
+      .target-box, .dialogue, .grammar, .tagalog, .example {
+        padding: 1rem 0.85rem;
+        margin: 0.9rem 0;
+      }
+
+      .jp { font-size: 1.08rem; line-height: 1.75; }
+
+      .line {
+        flex-direction: column;
+        gap: 0.2rem;
+        margin-bottom: 0.9rem;
+      }
+
+      .speaker {
+        min-width: auto;
+      }
+
+      table {
+        display: block;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        font-size: 0.9rem;
+      }
+
+      th, td {
+        padding: 0.6rem 0.7rem;
+        white-space: nowrap;
+      }
+
+      h3.section {
+        font-size: 1.15rem;
+        margin: 1.4rem 0 0.8rem;
+      }
+
+      nav {
+        padding: 0.6rem 0.4rem;
+      }
+
+      nav a {
+        padding: 0.5rem 0.9rem;
+        font-size: 0.9rem;
+        margin: 0 0.15rem;
+      }
     }
 
     /* Smooth scroll */
@@ -569,62 +643,54 @@
       <div class="lesson-body">
         <div class="target-box">
           <h3>🎯 Learning Target</h3>
-          <p>① Can express the feeling that one feels the time has not passed after the completion of the action with 「～たばかりです」.<br>
-          ② Can state the conviction with 「～はずです」.</p>
+          <p>① Can express that an action has just been completed with 「～たばかりです」.<br>
+          ② Can express a high degree of certainty with 「～はずです」.</p>
         </div>
 
         <h3 class="section">かいわ (Dialogue)</h3>
         <div class="dialogue">
           <div class="line">
-            <span class="speaker">ジョシュア：</span>
-            <span class="jp">こんばんは。まちましたか。</span>
+            <span class="speaker">マリア：</span>
+            <span class="jp">あ、たなかさん。いま かえった ばかりですか。</span>
           </div>
           <div class="line">
-            <span class="speaker">あき：</span>
-            <span class="jp">いいえ、いま ついたばかりです。</span>
+            <span class="speaker">たなか：</span>
+            <span class="jp">はい、いま かえった ばかりです。</span>
           </div>
           <div class="line">
-            <span class="speaker">ジョシュア：</span>
-            <span class="jp">たろうさんは まだですか。</span>
+            <span class="speaker">マリア：</span>
+            <span class="jp">きょうの かいぎは どうでしたか。</span>
           </div>
           <div class="line">
-            <span class="speaker">あき：</span>
-            <span class="jp">はい、まだです。</span>
-          </div>
-          <div class="line">
-            <span class="speaker">ジョシュア：</span>
-            <span class="jp">たろうさん、ほんとうに くるでしょうか。</span>
-          </div>
-          <div class="line">
-            <span class="speaker">あき：</span>
-            <span class="jp">くるはずですよ。けさ メールを もらいましたから。</span>
+            <span class="speaker">たなか：</span>
+            <span class="jp">まあまあでした。あしたも かいぎが ある はずです。</span>
           </div>
         </div>
 
         <h3 class="section">ぶんぽう (Grammar)</h3>
         <div class="grammar">
-          <h4>ぶんぽう A　Vた-form ばかりです ： just finished</h4>
-          <p>This sentence pattern expresses the speaker’s sense that not much time has passed since an action has been performed.</p>
+          <h4>ぶんぽう A　Vた-form ばかりです</h4>
+          <p>This expresses that an action was completed a short time ago. It emphasizes the speaker’s feeling that not much time has passed since the action.</p>
           <div class="example">
-            ① さっき ひるごはんを たべたばかりです。<br>
-            ② かのじょは せんげつ こうこうを そつぎょうしたばかりだそうです。
+            ① いま かえった ばかりです。<br>
+            ② この くるまは かった ばかりです。
           </div>
         </div>
 
         <div class="grammar">
-          <h4>ぶんぽう B　～はずです ： should ～</h4>
+          <h4>ぶんぽう B　～はずです</h4>
           <div class="pattern">
-            V dictionary / Vない-form / い-adj / な-adj / Nの  +  はずです
+            V / い-adj / な-adj / N  +  はずです
           </div>
-          <p>This sentence pattern is used when a speaker is decisively stating a conclusion that he or she has reached based on particular grounds.</p>
+          <p>「はずです」 expresses a strong conviction based on some information or logical reasoning. It means “should be” or “is expected to be”.</p>
         </div>
 
         <div class="tagalog">
           <h4>🇵🇭 Madaling paliwanag</h4>
-          <p><strong>たばかりです</strong> = “Kakatapos ko lang…”</p>
-          <p>Parang sinasabi mong “ang recent pa nito!” Kahit ilang oras na ang nakalipas, pakiramdam mo kakagawa mo pa lang.</p>
-          <p><strong>はずです</strong> = “Dapat…” o “Siguro naman…”</p>
-          <p>May basehan ka kaya sigurado kang mangyayari. Halimbawa: “May email siya kanina, kaya dapat darating siya.”</p>
+          <p><strong>たばかりです</strong> = “kakasimula / kakatapos lang”</p>
+          <p>Halimbawa: “Kakauwi ko lang.”</p>
+          <p><strong>はずです</strong> = “dapat / malamang”</p>
+          <p>Halimbawa: “Bukas din may meeting dapat.”</p>
         </div>
       </div>
     </section>
@@ -633,80 +699,45 @@
     <section class="lesson" id="l75">
       <div class="lesson-header">
         <div class="lesson-number">75</div>
-        <div class="lesson-title">めいれいけい / きんしけい (Imperative & Prohibitive)</div>
+        <div class="lesson-title">～て くれます / ～て もらいます</div>
       </div>
       <div class="lesson-body">
         <div class="target-box">
           <h3>🎯 Learning Target</h3>
-          <p>① Can understand the instruction and order/command.<br>
-          ② Can explain the meaning of the sign and notes.</p>
+          <p>Can express receiving favors with 「～て くれます」 and 「～て もらいます」.</p>
         </div>
 
         <h3 class="section">かいわ (Dialogue)</h3>
         <div class="dialogue">
           <div class="line">
-            <span class="speaker">ジョシュア：</span>
-            <span class="jp">この かんじは なんと よみますか。</span>
+            <span class="speaker">アキラ：</span>
+            <span class="jp">すみません。この かんじの よみかたを おしえて くれませんか。</span>
           </div>
           <div class="line">
-            <span class="speaker">きむら：</span>
-            <span class="jp">「みずあらいふか」と よみます。</span>
+            <span class="speaker">せんせい：</span>
+            <span class="jp">いいですよ。これは 「にほん」と よみます。</span>
           </div>
           <div class="line">
-            <span class="speaker">ジョシュア：</span>
-            <span class="jp">どういう いみですか。</span>
-          </div>
-          <div class="line">
-            <span class="speaker">きむら：</span>
-            <span class="jp">みずで せんたくするなと いう いみですよ。</span>
+            <span class="speaker">アキラ：</span>
+            <span class="jp">ありがとう ございます。とても 助かりました。</span>
           </div>
         </div>
 
         <h3 class="section">ぶんぽう (Grammar)</h3>
         <div class="grammar">
-          <h4>ぶんぽう A　めいれいけい (Imperative) と きんしけい (Prohibitive)</h4>
-          <p>The imperative form is used to demand/command a person to perform a certain action, and the prohibitive form is used to demand/command a person not to perform/forbid a certain action.</p>
+          <h4>ぶんぽう A　～て くれます</h4>
+          <p>Someone does something for the speaker (or the speaker’s in-group).</p>
+        </div>
 
-          <table>
-            <thead>
-              <tr>
-                <th>グループ</th>
-                <th>どうし</th>
-                <th>めいれいけい</th>
-                <th>きんしけい</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr><td rowspan="7">グループ I</td><td>のみます</td><td>のめ</td><td>のむな</td></tr>
-              <tr><td>まちます</td><td>まて</td><td>まつな</td></tr>
-              <tr><td>かきます</td><td>かけ</td><td>かくな</td></tr>
-              <tr><td>あそびます</td><td>あそべ</td><td>あそぶな</td></tr>
-              <tr><td>はしります</td><td>はしれ</td><td>はしるな</td></tr>
-              <tr><td>いそぎます</td><td>いそげ</td><td>いそぐな</td></tr>
-              <tr><td>がんばります</td><td>がんばれ</td><td>がんばるな</td></tr>
-              <tr><td rowspan="4">グループ II</td><td>やめます</td><td>やめろ</td><td>やめるな</td></tr>
-              <tr><td>でます</td><td>でろ</td><td>でるな</td></tr>
-              <tr><td>みます</td><td>みろ</td><td>みるな</td></tr>
-              <tr><td>ねます</td><td>ねろ</td><td>ねるな</td></tr>
-              <tr><td rowspan="2">グループ III</td><td>きます</td><td>こい</td><td>くるな</td></tr>
-              <tr><td>します</td><td>しろ</td><td>するな</td></tr>
-            </tbody>
-          </table>
-
-          <div class="example">
-            ① はやく ねろ。<br>
-            ② ここで とまれ。<br>
-            ③ エレベーターを つかうな。<br>
-            ④ あぶないから、そこに はいるな。
-          </div>
+        <div class="grammar">
+          <h4>ぶんぽう B　～て もらいます</h4>
+          <p>The speaker receives a favor from someone.</p>
         </div>
 
         <div class="tagalog">
           <h4>🇵🇭 Madaling paliwanag</h4>
-          <p><strong>めいれいけい</strong> = utos na “Gawin mo!”</p>
-          <p><strong>きんしけい</strong> = utos na “Huwag mong gawin!”</p>
-          <p>Parang mga signs sa pader o sa damit: “Huwag hugasan ng tubig!” o “Tumigil dito!”</p>
-          <p>Madalas makita sa mga instruction o babala. Matutunan mo lang ang pattern, madali na!</p>
+          <p><strong>て くれます</strong> = “ginawa niya para sa akin”</p>
+          <p><strong>て もらいます</strong> = “humingi ako ng tulong at ginawa niya”</p>
         </div>
       </div>
     </section>
@@ -715,44 +746,35 @@
     <section class="lesson" id="l76">
       <div class="lesson-header">
         <div class="lesson-number">76</div>
-        <div class="lesson-title">しえきけい (Causative Form)</div>
+        <div class="lesson-title">～て あげます</div>
       </div>
       <div class="lesson-body">
         <div class="target-box">
           <h3>🎯 Learning Target</h3>
-          <p>① Can state the compulsory action and approval with Causative Sentences.<br>
-          ② Can ask politely permission/approval with Causative form.</p>
+          <p>Can express giving favors with 「～て あげます」.</p>
         </div>
 
         <h3 class="section">かいわ (Dialogue)</h3>
         <div class="dialogue">
           <div class="line">
-            <span class="speaker">リー：</span>
-            <span class="jp">せんせい、すみません。いま よろしいですか。</span>
+            <span class="speaker">ユキ：</span>
+            <span class="jp">この にもつ、おもいですね。もって あげましょうか。</span>
           </div>
           <div class="line">
-            <span class="speaker">せんせい：</span>
-            <span class="jp">ええ。どうしたんですか。</span>
+            <span class="speaker">ともこ：</span>
+            <span class="jp">ありがとう。おねがいします。</span>
           </div>
-          <div class="line">
-            <span class="speaker">リー：</span>
-            <span class="jp">じつは あした くにから りょうしんが くるんです。それで くうこうへ むかえに いかなければ ならないんです。それで、すみませんが、あした がっこうを やすませて いただけませんか。</span>
-          </div>
-          <div class="line">
-            <span class="speaker">せんせい：</span>
-            <span class="jp">わかりました。みょうごにちは がっこうへ きてくださいね。</span>
-          </div>
-          <div class="line">
-            <span class="speaker">リー：</span>
-            <span class="jp">はい。ありがとう ございます。</span>
-          </div>
+        </div>
+
+        <h3 class="section">ぶんぽう (Grammar)</h3>
+        <div class="grammar">
+          <h4>ぶんぽう A　～て あげます</h4>
+          <p>The speaker does something for someone else.</p>
         </div>
 
         <div class="tagalog">
           <h4>🇵🇭 Madaling paliwanag</h4>
-          <p>Ang causative form ay parang “pinapayagan” o “pinipilit” mong gawin ang isang bagay sa iba.</p>
-          <p>Halimbawa: “Pwede po ba akong magpahinga bukas?” → ginagamit ang form na 「やすませて いただけませんか」</p>
-          <p>Ito ay magalang na paraan ng paghingi ng permiso. Napakabait at magalang!</p>
+          <p><strong>て あげます</strong> = “gagawin ko para sa iyo”</p>
         </div>
       </div>
     </section>
@@ -761,141 +783,31 @@
     <section class="lesson" id="l77">
       <div class="lesson-header">
         <div class="lesson-number">77</div>
-        <div class="lesson-title">そんけいご (Respectful Expressions)</div>
+        <div class="lesson-title">～て いただきます / けんじょうご</div>
       </div>
       <div class="lesson-body">
         <div class="target-box">
           <h3>🎯 Learning Target</h3>
-          <p>Can use properly and understand the use of Respectful expressions, based on the social standing and the relation with the person.</p>
-        </div>
-
-        <h3 class="section">かいわ (Dialogue)</h3>
-        <div class="dialogue">
-          <div class="line">
-            <span class="speaker">リー：</span>
-            <span class="jp">あの、はたのせんせい いらっしゃいますか。</span>
-          </div>
-          <div class="line">
-            <span class="speaker">うけつけ：</span>
-            <span class="jp">はい、しょうしょう おまちください。</span>
-          </div>
-          <div class="line">
-            <span class="speaker">うけつけ：</span>
-            <span class="jp">すみません。きょうは もう かえって しまったんですが…。</span>
-          </div>
-          <div class="line">
-            <span class="speaker">リー：</span>
-            <span class="jp">そうですか。もう おかえりに なったんですね。じゃ、はたのせんせいに つたえて いただけませんか。</span>
-          </div>
-          <div class="line">
-            <span class="speaker">うけつけ：</span>
-            <span class="jp">はい、なんでしょうか。</span>
-          </div>
-          <div class="line">
-            <span class="speaker">リー：</span>
-            <span class="jp">ねつが あるので あした がっこうを やすむと おつたえください。</span>
-          </div>
-          <div class="line">
-            <span class="speaker">うけつけ：</span>
-            <span class="jp">わかりました。どうぞ おだいじに。</span>
-          </div>
-        </div>
-
-        <h3 class="section">ぶんぽう (Grammar)</h3>
-        <div class="grammar">
-          <h4>ぶんぽう A　そんけいご (Respectful verbs)</h4>
-          <p>Respectful verbs show respect towards the person performing the action. These take the same form as passive verbs and are conjugated as Group II verbs.</p>
-          <table>
-            <tr><th>グループ</th><th>ふつう</th><th>そんけいご</th></tr>
-            <tr><td rowspan="5">I</td><td>きます</td><td>こられます</td></tr>
-            <tr><td>いきます</td><td>いかれます</td></tr>
-            <tr><td>よみます</td><td>よまれます</td></tr>
-            <tr><td>かえります</td><td>かえられます</td></tr>
-            <tr><td>はなします</td><td>はなされます</td></tr>
-            <tr><td rowspan="3">II</td><td>かけます</td><td>かけられます</td></tr>
-            <tr><td>でます</td><td>でられます</td></tr>
-            <tr><td>やめます</td><td>やめられます</td></tr>
-            <tr><td rowspan="2">III</td><td>きます</td><td>こられます</td></tr>
-            <tr><td>します</td><td>されます</td></tr>
-          </table>
-        </div>
-
-        <div class="grammar">
-          <h4>ぶんぽう B　お (Vます-form) に なります</h4>
-          <p>This form is generally considered to be more polite than the respectful verbs.</p>
-        </div>
-
-        <div class="grammar">
-          <h4>ぶんぽう C　お/ご (Vます-form) ください</h4>
-          <p>This is the respectful equivalent of Vて-form ください.</p>
-        </div>
-
-        <div class="grammar">
-          <h4>ぶんぽう D　Special respectful words</h4>
-          <table>
-            <tr><td>いきます / きます / います</td><td>いらっしゃいます</td></tr>
-            <tr><td>たべます / のみます</td><td>めしあがります</td></tr>
-            <tr><td>いいます</td><td>おっしゃいます</td></tr>
-            <tr><td>しっています</td><td>ごぞんじです</td></tr>
-            <tr><td>みます</td><td>ごらんに なります</td></tr>
-            <tr><td>します</td><td>なさいます</td></tr>
-            <tr><td>くれます</td><td>くださいます</td></tr>
-          </table>
-        </div>
-
-        <div class="tagalog">
-          <h4>🇵🇭 Madaling paliwanag</h4>
-          <p>Ang <strong>そんけいご</strong> ay paraan ng pagsasalita na may respeto sa taong kausap o pinag-uusapan.</p>
-          <p>Parang sinasabi mong “Po” at “Opo” sa Tagalog, pero mas detalyado sa Japanese.</p>
-          <p>Ginagamit kapag kausap mo ang guro, boss, o taong hindi mo gaanong kakilala. Ipinapakita nito na magalang ka.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- ========== LESSON 78 ========== -->
-    <section class="lesson" id="l78">
-      <div class="lesson-header">
-        <div class="lesson-number">78</div>
-        <div class="lesson-title">けんじょうご (Humble Expressions)</div>
-      </div>
-      <div class="lesson-body">
-        <div class="target-box">
-          <h3>🎯 Learning Target</h3>
-          <p>Can use properly and understand the use of Humble expressions, based on the social standing and the relation with the person.</p>
+          <p>Can use humble expressions (けんじょうご) when speaking to superiors.</p>
         </div>
 
         <h3 class="section">かいわ (Dialogue)</h3>
         <div class="dialogue">
           <div class="line">
             <span class="speaker">パオ：</span>
-            <span class="jp">はじめまして、わたしは パオと もうします。</span>
+            <span class="jp">しゃちょう、ちょっと うかがいたい んですが。</span>
           </div>
           <div class="line">
-            <span class="speaker">きむら：</span>
-            <span class="jp">はじめまして。きむらです。どうぞ そちらに おかけください。</span>
-          </div>
-          <div class="line">
-            <span class="speaker">パオ：</span>
-            <span class="jp">しつれいします。</span>
-          </div>
-          <div class="line">
-            <span class="speaker">きむら：</span>
-            <span class="jp">コーヒーを おのみに なりますか。</span>
+            <span class="speaker">しゃちょう：</span>
+            <span class="jp">はい、どうぞ。</span>
           </div>
           <div class="line">
             <span class="speaker">パオ：</span>
-            <span class="jp">ありがとう ございます。では、いただきます。</span>
+            <span class="jp">この しりょうを はいけんして も よろしいですか。</span>
           </div>
           <div class="line">
-            <span class="speaker">きむら：</span>
-            <span class="jp">この クッキーも めしあがって ください。</span>
-          </div>
-        </div>
-
-        <div class="dialogue">
-          <div class="line">
-            <span class="speaker">きむら：</span>
-            <span class="jp">あ、あめが ふってきましたね。かさを おかし しましょうか。</span>
+            <span class="speaker">しゃちょう：</span>
+            <span class="jp">いいですよ。</span>
           </div>
           <div class="line">
             <span class="speaker">パオ：</span>
@@ -932,6 +844,25 @@
           <p>Sa kenjougo, ibinababa mo ang sarili mo para ipakita ang respeto.</p>
           <p>Halimbawa: sa halip na “わたしは パオです”, sinasabi mong “わたしは パオと もうします” — mas magalang.</p>
           <p>Ginagamit ito kapag ikaw ang gumagawa ng aksyon para sa o sa harap ng taong respetado.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== LESSON 78 ========== -->
+    <section class="lesson" id="l78">
+      <div class="lesson-header">
+        <div class="lesson-number">78</div>
+        <div class="lesson-title">Review & Final</div>
+      </div>
+      <div class="lesson-body">
+        <div class="target-box">
+          <h3>🎯 Learning Target</h3>
+          <p>Review all grammar points from Lessons 71–78 for the N2-3 final examination.</p>
+        </div>
+
+        <div class="tagalog">
+          <h4>🇵🇭 Review Notes</h4>
+          <p>Balikan ang lahat ng grammar points. Mag-focus sa dialogues at examples.</p>
         </div>
       </div>
     </section>
